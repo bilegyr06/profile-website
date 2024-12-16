@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: inter-bold;
+    src: url(./assets/fonts/static/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: inter-semibold;
+    src: url(./assets/fonts/static/Inter-SemiBold.ttf);
+}
+@font-face {
+    font-family: inter-regular;
+    src: url(./assets/fonts/static/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: inter;
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+body{
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 100%);
+}
+
+
+.container{
+    box-sizing: border-box;
+    width: 340px;
+    background-color:  hsl(0, 0%, 12%);
+    margin: 60px auto;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.profile img{
+    width: 80px;
+    height: 80px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    margin: auto;
+    margin-bottom: 22px;
+}
+.profile h2{
+    font-family: inter;
+    font-size: 20px;
+    font-weight: 600;
+    margin: auto;
+    margin-bottom: 6px;
+}
+.profile h4{
+    font-family: inter;
+    font-size: 12px;
+    margin: auto;
+    color: hsl(75, 94%, 57%);
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+
+.profile p{
+    font-family: inter;
+    font-weight: 400;
+    font-size: 12px;
+    margin: auto;
+}
+
+.socials{
+    display: flex;
+    flex-direction: column;
+}
+
+.socials ul{
+    white-space: nowrap;
+}
+
+.socials li{
+    list-style: none;
+    margin-top: 15px;
+}
+
+.socials a{
+    display: flex;
+    justify-content: center;
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    padding:10px 40px ;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-family: inter;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.socials a:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 12%);
+
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (min-width: 1440px){
+    .container{
+        margin: 120px auto;
+    }
+}
